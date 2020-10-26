@@ -14,7 +14,7 @@ All three lots' variance totals 76.23 lbs which is below the 100 lb requirement.
 <br>
 ## T-Tests on Suspension Coils
 The t-test shows the P-value is 1 which means we can reject the null hypothesis and predict that the PSI across all manufacturing lots is not statistically different from the population mean of 1,500 lbs per sq in.<br>
-Resources/One_Sample_ttest
+<img src="Resources/One_Sample_ttest.png" width=300>
 <br>
 For lot 1:
 The P-value is less than 0.05 which means we can reject the null hypothesis for this grouping.<br>
@@ -25,7 +25,7 @@ The P-value is 0.79 which means we cannot reject the null hypothesis for this gr
 
 For both lot 2 and 3 the means are not statistically different from the population mean of 1500 lbs per sq in. However the mean of lot 1 is statistically different from the population mean of 1500 lbs per sq in.
 <br>
-Resources/lots_ttest
+<img src="Resources/lots_ttest.png" width=300 length=400>
 <br>
 ## Study Design: MechaCar vs Competition
 For future analysis I would look at data ponts for cost, buy-back value, engine capacity, maintenance, and safety rating. The following hypotheis will be tested: <br>
