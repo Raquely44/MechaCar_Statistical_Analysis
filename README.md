@@ -1,4 +1,4 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
 - Vehicle weight and ground clearance coefficients provided a non-random amount of variance to mpg data.
@@ -29,8 +29,9 @@ For both lot 2 and 3 the means are not statistically different from the populati
 <br>
 ## Study Design: MechaCar vs Competition
 For future analysis I would look at data ponts for cost, buy-back value, engine capacity, maintenance, and safety rating. The following hypotheis will be tested: <br>
-H0: There is no statistical difference between MechaCar and competitive companies.
 <br>
+H0: There is no statistical difference between MechaCar and competitive companies.
 Ha: There is a statistical difference between MechaCar and competitive companies.
+<br>
 <br>
 A two sample t-test would be used to test the hypothesis for each data point, MechaCar vs Competition, by year. The T-test will allow the company to observe if each variable has a significant difference between the two companies. The data point for cost, buy-back value (return on investment), engine capacity, avgerage maintenance cost, and safety rating will be used for these tests.
