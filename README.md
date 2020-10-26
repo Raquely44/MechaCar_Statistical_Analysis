@@ -8,10 +8,10 @@
 - The adjusted R-squared value is 0.6825 which means 68% of the variance in the mpg can be predicted by all variables.<br>
 <br>
 Based on the results of the linear regression, the results show it can be used to predict mpg of MechaCar prototypes effectively.
-<br>
+
 ## Summary Statistics on Suspension Coils
 All three lots' variance totals 76.23 lbs which is below the 100 lb requirement. Lot 3 however has a variance of 220 lbs which does not meet the design specifications.
-<br>
+
 ## T-Tests on Suspension Coils
 The t-test shows the P-value is 1 which means we can reject the null hypothesis and predict that the PSI across all manufacturing lots is not statistically different from the population mean of 1,500 lbs per sq in.<br>
 <img src="Resources/One_Sample_ttest.png" width=300>
