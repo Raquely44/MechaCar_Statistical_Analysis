@@ -1,18 +1,10 @@
 
 > setwd("~/Documents/Data/R_Analysis/MechaCar_Statistical_Analysis")
 > library(tidyverse)
-── Attaching packages ──────────────── tidyverse 1.3.0 ──
-✓ ggplot2 3.3.2     ✓ purrr   0.3.4
-✓ tibble  3.0.4     ✓ dplyr   1.0.2
-✓ tidyr   1.1.2     ✓ stringr 1.4.0
-✓ readr   1.4.0     ✓ forcats 0.5.0
-── Conflicts ─────────────────── tidyverse_conflicts() ──
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()
-> ?mutate()
+
 > mechCar <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 > View(mechCar)
-> ?lm()
+
 > lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mechCar)
 
 Call:
@@ -62,8 +54,6 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 > total_summary <- suspension_coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
 > lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
-`summarise()` ungrouping output (override with `.groups` argument)
-
 
 > t.test(log10(suspension_coil$PSI),mu=mean(log10(suspension_coil$PSI)))
 
@@ -79,9 +69,6 @@ mean of x
  3.175948 
 
 > lot1 <- subset(suspension_coil, Manufacturing_Lot == "Lot1")
-> t.test(log10(lot1$PSI),mu=mean(log10(suspension_table$PSI)))
-Error in mean(log10(suspension_table$PSI)) : 
-  object 'suspension_table' not found
 > t.test(log10(lot1$PSI),mu=mean(log10(suspension_coil$PSI)))
 
 	One Sample t-test
